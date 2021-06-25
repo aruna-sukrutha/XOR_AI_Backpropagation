@@ -23,5 +23,6 @@ for i in range(10000): #chosen 10000 for more learning rate,effective training a
     output_bias += np.sum(final,axis=0,keepdims=True)
     weights += input.T.dot(final_hidden_layer)
     bias += np.sum(final_hidden_layer,axis=0,keepdims=True)
+print("Input:\n",input)
 print("Output of neural network:\n")
 print(*actual_output)
